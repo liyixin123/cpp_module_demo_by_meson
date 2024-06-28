@@ -104,6 +104,7 @@ int main()
 	std::println("{:#}", p);
 	fmt::println("{}", p);
 	fmt::println("{:#}", p);
-
+	std::map<std::string, int> m{{"a", 1}, {"b", 2}, {"c", 3}};
+	fmt::println("{}", m);
 	return 0;
 }

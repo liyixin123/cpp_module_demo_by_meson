@@ -23,7 +23,7 @@
 1. 打开 `Developer Command(或Powershell) Prompt for VS 2022`。
 1. 进入根目录下，创建 `subprojects` 子目录。
 1. 将 `fmt` 库作为一个子工程引入，`meson wrap install fmt`。
-1. 进入项目根目录，配置项目：`meson setup builddir`。
+1. 进入项目根目录，配置项目：`meson setup builddir`。(此时可以同时生成vs的工程文件，`meson setup builddir --backend vs2022 --wipe`)
 1. 上面两步可能因为网络不好而失败，可以多试两次。
 1. 编译项目：`meson compile -C builddir`。
 1. 运行软件: `.\builddir\main`。
